@@ -1,12 +1,11 @@
 <p align="center"><img src="icon.png"/></p>
 
 Original GDScript project: https://github.com/KenneyNL/Starter-Kit-3D-Platformer
-# Starter Kit 3D Platformer - C# Port
-
+# Starter Kit 3D Platformer - C/C++ Port
 ## Slight differences
-- no signals, but added a GodotEvent class that offers a workflow similar to UnityEvents
-- instead of adding signals from the editor inspector, added them through code.
-- Magic strings as constants
+- Requires [godot-cpp](https://github.com/godotengine/godot-cpp) bidings.
+- magic strings as constants
+- Crashes often
 
 This package includes a basic template for a 3D platformer game in Godot 4.2.stable.official. Includes features like;
 
