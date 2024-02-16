@@ -12,15 +12,10 @@ config_version=5
 
 config/name="Starter Kit 3D Platformer - C++"
 config/tags=PackedStringArray("starterkit")
-run/main_scene="res://scenes/main.tscn"
-config/features=PackedStringArray("4.2", "C#", "Forward Plus")
-boot_splash/bg_color=Color(0.92549, 0.92549, 0.960784, 1)
-boot_splash/image="res://splash-screen.png"
-config/icon="res://icon.png"
-
-[autoload]
-
-AudioCs="*res://scripts/CSPort/AudioCS.cs"
+config/features=PackedStringArray("4.2", "Forward Plus")
+boot_splash/bg_color=Color(0.314407, 0.306334, 0.452267, 1)
+boot_splash/show_image=false
+boot_splash/fullsize=false
 
 [display]
 

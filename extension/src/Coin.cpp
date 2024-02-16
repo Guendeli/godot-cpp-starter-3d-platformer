@@ -3,6 +3,7 @@
 #include <godot_cpp/core/class_db.hpp>
 #include <godot_cpp/variant/utility_functions.hpp>
 #include "Coin.h"
+#include "GameConstants.h"
 
 using namespace godot;
 
@@ -49,8 +50,7 @@ void Coin::OnBodyEntered(Node3D* body)
     if(!_grabbed)
     {
         // Collect Coin
-        // Audio instance play
-        UtilityFunctions::print("Grabbed");
+        emit_signal("audio_play", GameConstants::SFX_COIN);
         _mesh->queue_free();
         _emitter->set_emitting(false);
         _grabbed = true;

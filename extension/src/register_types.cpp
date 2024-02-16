@@ -7,10 +7,13 @@
 #include "Coin.h"
 #include "Platform.h"
 #include "View.h"
+#include "HUD.h"
+//#include "Audio.h"
+#include "Player.h"
 
 using namespace godot;
 
-namespace FlecsModule
+namespace GameModule
 {
 	void initialize(ModuleInitializationLevel p_level)
 	{
@@ -18,10 +21,14 @@ namespace FlecsModule
 		{
 			return;
 		}
+
 		ClassDB::register_class<Cloud>();
 		ClassDB::register_class<Coin>();
 		ClassDB::register_class<Platform>();
 		ClassDB::register_class<View>();
+		ClassDB::register_class<HUD>();
+		//ClassDB::register_class<Audio>();
+		ClassDB::register_class<Player>();
 	}
 
 	void uninitialize(ModuleInitializationLevel p_level)

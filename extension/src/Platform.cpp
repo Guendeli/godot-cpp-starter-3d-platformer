@@ -2,6 +2,7 @@
 #include <godot_cpp/core/class_db.hpp>
 #include <godot_cpp/variant/utility_functions.hpp>
 #include "Platform.h"
+#include "GameConstants.h"
 
 using namespace godot;
 
@@ -47,7 +48,7 @@ void Platform::OnBodyEntered(Node3D* body)
 {
     if(!_falling)
     {
-        // play audio
+        emit_signal("audio_play",GameConstants::SFX_FALL);
 
         set_scale(godot::Vector3(1.25,1,1.25));
     }
